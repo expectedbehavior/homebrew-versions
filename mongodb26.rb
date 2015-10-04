@@ -24,6 +24,11 @@ class Mongodb26 < Formula
       url "https://raw.githubusercontent.com/DomT4/scripts/fbc0cda/Homebrew_Resources/Mongodb/mongoyosemite.diff"
       sha1 "f4824e93962154aad375eb29527b3137d07f358c"
     end
+  elsif MacOS.version == :el_capitan
+    patch do
+      url "https://gist.githubusercontent.com/jqr/a5bde3e64d20d2a6d6ec/raw/3d1d777d6c609dd0ef2912319edb0956ee56df7c/mongoelcapitan.diff"
+      sha1 "3d2af943e25b8fac90f5acab5bc2e40882eb6377"
+    end
   end
 
   def install
